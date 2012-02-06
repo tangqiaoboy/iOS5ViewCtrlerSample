@@ -41,22 +41,20 @@ ThirdViewController *thirdViewController;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+
     firstViewController=[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     [self addChildViewController:firstViewController];
-    
+
     secondViewController=[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     [self addChildViewController:secondViewController];
-    
+
     thirdViewController=[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
     [self addChildViewController:thirdViewController];
-    
-    [contentView addSubview:firstViewController.view];
-    [contentView addSubview:secondViewController.view];
+
     [contentView addSubview:thirdViewController.view];
-    
+
     currentViewController=thirdViewController;
-    
+
 }
 
 - (void)viewDidUnload
@@ -92,7 +90,7 @@ ThirdViewController *thirdViewController;
         {
             NSLog(@"生日提醒");
             [self transitionFromViewController:currentViewController toViewController:secondViewController duration:1 options:UIViewAnimationOptionTransitionCurlDown animations:^{
-                
+
             }  completion:^(BOOL finished) {
                 if (finished) {
                   currentViewController=secondViewController;
@@ -106,7 +104,7 @@ ThirdViewController *thirdViewController;
         {
             NSLog(@"好友申请");
             [self transitionFromViewController:currentViewController toViewController:thirdViewController duration:1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-                
+
             }  completion:^(BOOL finished) {
                 if (finished) {
                      currentViewController=thirdViewController;

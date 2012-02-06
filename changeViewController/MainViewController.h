@@ -12,13 +12,13 @@
 {
 
     IBOutlet UIView *contentView;
-    
+
     IBOutlet UIButton *firstButton;
-    
+
     IBOutlet UIButton *secondButton;
-    
+
     IBOutlet UIButton *thirdButon;
-    
+
     UIViewController *currentViewController;
 
 }
