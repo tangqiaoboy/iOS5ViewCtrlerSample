@@ -1,0 +1,3 @@
+The sample code is modified from http://easymorse-iphone.googlecode.com/svn/trunk/changeViewController, the original author is marcus wang, his blog is http://wangjun.easymorse.com/?p=1630.
+
+I change his sample code a little to watch the view load and unload event when receiving memory warning. I also have a blog to introduce the new APIs about UIViewController on iOS5, it is from http://blog.devtang.com
